@@ -1,0 +1,98 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom,  #003566, #037fc2, #001233);
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.349);
+    overflow: hidden;
+}
+
+.header{
+    background: linear-gradient(120deg,  #001233ef 0%,  #014b91fd 100%);
+    color: #fff;
+    padding: 24px;
+    text-align: center;
+}
+
+.form{
+    padding: 18px;
+}
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}   
+
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+
+.form button{
+    background-color: #014b91fd;
+    color: #fff;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form-content.error input {
+    border-color: #dd2b17;
+}
+.form-content.error a{
+    color: #dd2b17;
+    visibility: visible;
+}
+
+@media( max-width: 600px){
+    .form-content{
+        width: 80vw;
+    }
+    input{
+        padding: 6px;
+    }
+    button{
+        padding: 8px 16px;
+    }
+}
+
